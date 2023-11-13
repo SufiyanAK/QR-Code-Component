@@ -1,0 +1,49 @@
+@font-face {
+    font-family: outfit;
+    src: url(Outfit/static/Outfit-Regular.ttf);
+}
+
+*, *::after, *::before {
+    font-family: outfit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: #d2ddec;
+}
+
+.qr-card {
+    text-align: center;
+    padding: 1rem 1rem 3rem;
+    background-color: var(--White);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 1rem 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.qr-img {
+    border-radius: 1rem;
+    width: 18rem;
+}
+
+.qr-heading {
+    font-size: 1.35rem;
+    letter-spacing: 0.8px;
+}
+
+.qr-content {
+    color: var(--Grayish-blue);
+    width: 25ch;
+}
